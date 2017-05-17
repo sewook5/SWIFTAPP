@@ -9,18 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-   
+    
     @IBOutlet var theLabel: UILabel!
- 
+    
     @IBOutlet var Text1: UITextField!
     @IBOutlet var Text2: UITextField!
     
     
     @IBAction func buttonTapped(_ sender: Any) {
-
-        print(Text1.text!)
-        print(Text2.text!)
-        theLabel.text = "Answer is... \(Int(Text1.text!)! + Int(Text2.text!)!)"
+        
+        let addition:Bool = false
+        
+        if addition {
+            theLabel.text = "Answer is... \(Int(Text1.text!)! + Int(Text2.text!)!)"
+        } else {
+            theLabel.text = "Answer is... \(Int(Text1.text!)! - Int(Text2.text!)!)"
+        }
         
     }
     
@@ -31,12 +35,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
