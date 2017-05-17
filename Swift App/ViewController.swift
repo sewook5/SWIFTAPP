@@ -20,6 +20,8 @@ class ViewController: UIViewController {
 
         print(Text1.text!)
         print(Text2.text!)
+        theLabel.text = "Answer is... \(Int(Text1.text!)! + Int(Text2.text!)!)"
+        
     }
     
     
